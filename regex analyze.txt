@@ -1,0 +1,31 @@
+{"r_sph":-2.8,"l_sph":-5.67,"r_cyl":-2.49,"l_cyl":-0.97,"r_axis":162.5,"l_axis":20.3 	
+
+
+
+sudo sed -i -- 's/"l_sph":-*[0-9]*\.[0-9]*,/"l_sph":-1.00,'/g *	
+sudo sed -i -- 's/"r_sph":-*[0-9]*\.[0-9]*,/"r_sph":-1.00,'/g *	
+sudo sed -i -- 's/"l_cyl":-*[0-9]*\.[0-9]*,/"l_cyl":-0.50,'/g *	
+sudo sed -i -- 's/"r_cyl":-*[0-9]*\.[0-9]*,/"r_cyl":-0.75,'/g *	
+sudo sed -i -- 's/"l_axis":124,/"l_axis":135,'/g *	
+sudo sed -i -- 's/"r_axis":-*[0-9]*\.[0-9]*,/"r_axis":45,'/g *	
+\d+(\.\d{1,2})?
+
+l_cyl	-0.75	-0.51	X
+r_cyl	-0.5	-0.72	X
+
+sudo sed -i -- 's/"l_cyl":-*[0-9]*\.[0-9]*,/"l_cyl":-0.50,'/g *	
+sudo sed -i -- 's/"r_cyl":-*[0-9]*\.[0-9]*,/"r_cyl":-0.75,'/g *	
+
+
+mv 3835fd89-a40e-484c-9683-7f4fc3a5a491 ../tmp
+mv 716eba1f-2103-4ac8-9ed0-b2d304e7a5d6 ../tmp
+mv b24a8658-295e-4bec-b0c0-a094e944c895 ../tmp
+mv ce6f239f-d653-480c-9fad-9c5d0b7fc903 ../tmp
+mv f381179a-d06c-4e84-96d5-57bc7be4065b ../tmp
+mv f481a70d-84b0-4923-8802-29f4d4ade1f1 ../tmp
+
+
+
+sudo sed -i -- 's/"r_sph":4.88,/"r_sph":-4.88,'/g *	
+
+6 and the like, both spheres are minus 1, the cylinder is mixed between left and right
